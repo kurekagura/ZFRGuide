@@ -89,6 +89,18 @@ msbuild HelloEXE.csproj /p:Configuration=Debug;Platform=AnyCPU
 msbuild HelloEXE.csproj /p:Configuration=Debug;Platform=AnyCPU /t:rebuild
 ```
 
+## ビルド成果物
+
+csprojの`<OutputPath/>`で指定されているサブフォルダに出力されます。Configuration=Debugを指定した場合、次のようになります。
+
+```dos
+> dir /B .\bin\Debug
+HelloDLL.dll
+HelloDLL.pdb
+HelloEXE.exe
+HelloEXE.pdb
+```
+
 ## Visual Studioのソリューションファイル（.sln）との関係
 
 VSのソリューション（拡張子.sln）に上記二つのcsprojを含んだ状態はソリューションエクスプローラ内では、次のように見えます。
