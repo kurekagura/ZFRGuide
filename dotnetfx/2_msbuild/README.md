@@ -69,10 +69,12 @@
 </Project>
 ```
 
-## Build using msbuild
+## Build using MSBuild
+
+MSBuidの実体は「MSBuild.exe」です。
 
 ```dos
-> where msbuild.exe
+> where MSBuild.exe
 C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\MSBuild.exe
 C:\Windows\Microsoft.NET\Framework64\v4.0.30319\MSBuild.exe
 ```

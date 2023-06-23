@@ -30,8 +30,10 @@ public class HelloDLL{
 
 ## Command Compile
 
+C#のコマンドラインコンパイラは「csc.exe」です。
+
 ```dos
-> where csc
+> where csc.exe
 C:\Program Files (x86)\Microsoft Visual Studio\2017\BuildTools\MSBuild\15.0\Bin\Roslyn\csc.exe
 C:\Windows\Microsoft.NET\Framework64\v4.0.30319\csc.exe
 ```
@@ -61,8 +63,10 @@ clean:
     del /q HelloDLL.dll HelloEXE.exe
 ```
 
+MicrosoftのMAKEコマンドは「nmake.exe」です。
+
 ```dos
-> where nmake
+> where nmake.exe
 C:\Program Files (x86)\Microsoft Visual Studio\2017\BuildTools\VC\Tools\MSVC\14.16.27023\bin\Hostx64\x64\nmake.exe
 ```
 
