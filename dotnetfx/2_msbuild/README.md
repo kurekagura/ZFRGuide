@@ -86,3 +86,19 @@ msbuild HelloEXE.csproj /p:Configuration=Debug;Platform=AnyCPU
 ```dos
 msbuild HelloEXE.csproj /p:Configuration=Debug;Platform=AnyCPU /t:rebuild
 ```
+
+## Visual Studioのソリューションファイル（.sln）との関係
+
+VSのソリューション（拡張子.sln）に上記二つのcsprojを含んだ状態はソリューションエクスプローラ内では、次のように見えます。
+
+[HelloApp.sln(VS2022の例)](./HelloApp.sln)
+
+![VSのソリューションエクスプローラ](./img/sln.png)
+
+このようにVSソリューションとは、ビルドルールが記述されているcsproj（VSプロジェクト）の依存関係のUI表現と言えます。
+
+リストの２番目、HelloEXEプロジェクトの「参照」のところに「.\HelloDLL.csproj」が表示されています。
+
+リストの１番目、HelloDLLプロジェクトはビルドの観点からは必要ないのですが、VSの機能ではソリューションに含めるようになっています。これによってソースコード「HelloDLL.cs」も編集できるようになっています。この方法を「プロジェクト参照」と呼びます。
+
+一方、HelloDLL.dllのソースコードが存在しない、または必要がない場合、「アセンブリ参照」として参照することもできます。
