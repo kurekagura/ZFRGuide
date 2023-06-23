@@ -63,14 +63,14 @@ candle HelloAppSetup.wxs
 
 HelloAppSetup.wixobjが生成されます。.wixobjはWiXオブジェクトファイルです。
 
-light.exeコマンドにより、.wixobjから.msiを生成します。
+light.exeコマンドにより、.wixobjをリンク、最終成果物の.msiを生成します。
 
 ```dos
 light HelloAppSetup.wixobj
 ```
 
 HelloAppSetup.msiが生成されます。  
-HelloAppSetup.wixpdbはシンボルファイルです。  
+同時に生成されるHelloAppSetup.wixpdbはシンボルファイルです。  
 
 出力ファイル名を変更したい場合は、オプション`-o`で指定します。
 
