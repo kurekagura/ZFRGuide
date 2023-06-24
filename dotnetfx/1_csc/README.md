@@ -85,3 +85,7 @@ C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.3253
 > where link.exe
 C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\bin\Hostx64\x64\link.exe
 ```
+
+.NET言語（C#, F#, VB.NET）にはリンカが必要ないため（リンクという概念がありません）、C#リンカというものは存在しません。
+
+csc.exeで.csファイルをコンパイルするとC/C++のようなオブジェクトファイル（中間生成物）は生成されず、直接.exeもしくは.dll（アセンブリという）を生成します。cscの`/reference`オプションで「参照」しているのは.dllであり、リンクしているわけではありません。
