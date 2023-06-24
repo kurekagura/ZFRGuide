@@ -123,3 +123,12 @@ C:\Program Files (x86)\WiX Toolset v3.11\bin
 OrcaはWindows SDK（VSからインストールもできる）から入手できます。例えば以下です。
 
 C:\Program Files (x86)\Windows Kits\10\bin\10.0.22000.0\x86\Orca-x86_en-us.msi
+
+### レジストリからキーを探す
+
+アンインストール（msiexec /x）時に指定するキーは以下をエクスポートして探すことができます。
+
+```text
+"HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall
+"HKLM\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall
+```
