@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+	<Product Id="{E24A0063-91D5-4C6B-B0CB-F69B0A9EDD4F}" Name="HelloApp" Language="1033" Version="1.0.0.0" Manufacturer="90k" UpgradeCode="{CB85737E-6553-4FC2-8CC6-D37843EA9BAB}">
+		<Package InstallerVersion="200" Compressed="yes" InstallScope="perMachine" />
+
+		<MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." />
+		<MediaTemplate />
+
+		<Feature Id="ProductFeature" Title="HelloApp" Level="1">
+			<ComponentGroupRef Id="ProductComponents" />
+		</Feature>
+	</Product>
+
+	<Fragment>
+		<Directory Id="TARGETDIR" Name="SourceDir">
+			<Directory Id="ProgramFilesFolder">
+				<Directory Id="INSTALLDIR" Name="HelloApp" />
+			</Directory>
+		</Directory>
+	</Fragment>
+
+  <Fragment>
+    <ComponentGroup Id="ProductComponents" Directory="INSTALLDIR">
+      <Component Id="HelloDLLComponent001" Guid="{4D7ADD26-428E-4598-8FDB-FB77D848A060}">
+        <File Id="HelloDLL001" Source="..\HelloEXE\bin\Debug\HelloDLL001.dll" />
+        <File Id="HelloDLL001PDB" Source="..\HelloEXE\bin\Debug\HelloDLL001.pdb" />
+      </Component>
+      <Component Id="HelloDLLComponent002" Guid="{88F29F94-E830-46D8-842E-0348E5D3B75D}">
+        <File Id="HelloDLL002" Source="..\HelloEXE\bin\Debug\HelloDLL002.dll" />
+        <File Id="HelloDLL002PDB" Source="..\HelloEXE\bin\Debug\HelloDLL002.pdb" />
+      </Component>
+      <Component Id="HelloDLLComponent003" Guid="{78FC0EA0-FF67-4BD5-AA58-FCEFA9D75709}">
+        <File Id="HelloDLL003" Source="..\HelloEXE\bin\Debug\HelloDLL003.dll" />
+        <File Id="HelloDLL003PDB" Source="..\HelloEXE\bin\Debug\HelloDLL003.pdb" />
+      </Component>
+      <Component Id="HelloDLLComponent004" Guid="{8AC9E908-63A3-4F5C-A48C-88DF54A41F2E}">
+        <File Id="HelloDLL004" Source="..\HelloEXE\bin\Debug\HelloDLL004.dll" />
+        <File Id="HelloDLL004PDB" Source="..\HelloEXE\bin\Debug\HelloDLL004.pdb" />
+      </Component>
+      <Component Id="HelloDLLComponent005" Guid="{8EB5477B-3B86-4700-873C-22A02146B46D}">
+        <File Id="HelloDLL005" Source="..\HelloEXE\bin\Debug\HelloDLL005.dll" />
+        <File Id="HelloDLL005PDB" Source="..\HelloEXE\bin\Debug\HelloDLL005.pdb" />
+      </Component>
+      <Component Id="HelloDLLComponent006" Guid="{5CB014A9-277E-4357-9616-494F18C88221}">
+        <File Id="HelloDLL006" Source="..\HelloEXE\bin\Debug\HelloDLL006.dll" />
+        <File Id="HelloDLL006PDB" Source="..\HelloEXE\bin\Debug\HelloDLL006.pdb" />
+      </Component>
+      <Component Id="HelloDLLComponent007" Guid="{F7F50FAC-1887-48A9-8429-FCE14CF2B9C3}">
+        <File Id="HelloDLL007" Source="..\HelloEXE\bin\Debug\HelloDLL007.dll" />
+        <File Id="HelloDLL007PDB" Source="..\HelloEXE\bin\Debug\HelloDLL007.pdb" />
+      </Component>
+      <Component Id="HelloDLLComponent008" Guid="{01B520B4-2B5F-4AB6-B99E-774EEC70797B}">
+        <File Id="HelloDLL008" Source="..\HelloEXE\bin\Debug\HelloDLL008.dll" />
+        <File Id="HelloDLL008PDB" Source="..\HelloEXE\bin\Debug\HelloDLL008.pdb" />
+      </Component>
+      <Component Id="HelloDLLComponent009" Guid="{002961F8-ECEB-46D6-ACE2-F6A6AEB0FE87}">
+        <File Id="HelloDLL009" Source="..\HelloEXE\bin\Debug\HelloDLL009.dll" />
+        <File Id="HelloDLL009PDB" Source="..\HelloEXE\bin\Debug\HelloDLL009.pdb" />
+      </Component>
+      <Component Id="HelloDLLComponent010" Guid="{43327695-A6B1-40D3-8DD8-D0DA9AED02D7}">
+        <File Id="HelloDLL010" Source="..\HelloEXE\bin\Debug\HelloDLL010.dll" />
+        <File Id="HelloDLL010PDB" Source="..\HelloEXE\bin\Debug\HelloDLL010.pdb" />
+      </Component>
+      <Component Id="HelloDLLComponent011" Guid="{2CB0173C-4185-4C5D-A353-F91CA2307DE3}">
+        <File Id="HelloDLL011" Source="..\HelloEXE\bin\Debug\HelloDLL011.dll" />
+        <File Id="HelloDLL011PDB" Source="..\HelloEXE\bin\Debug\HelloDLL011.pdb" />
+      </Component>
+      <Component Id="HelloDLLComponent012" Guid="{48CFCB53-16DE-4893-83C1-EFDB22EB59C3}">
+        <File Id="HelloDLL012" Source="..\HelloEXE\bin\Debug\HelloDLL012.dll" />
+        <File Id="HelloDLL012PDB" Source="..\HelloEXE\bin\Debug\HelloDLL012.pdb" />
+      </Component>
+      <Component Id="HelloDLLComponent013" Guid="{E36AF7C9-E314-43E9-93AB-5CE2110EBB33}">
+        <File Id="HelloDLL013" Source="..\HelloEXE\bin\Debug\HelloDLL013.dll" />
+        <File Id="HelloDLL013PDB" Source="..\HelloEXE\bin\Debug\HelloDLL013.pdb" />
+      </Component>
+      <Component Id="HelloDLLComponent014" Guid="{FA7DF5D1-84E8-4C53-B56D-A52ED42258A9}">
+        <File Id="HelloDLL014" Source="..\HelloEXE\bin\Debug\HelloDLL014.dll" />
+        <File Id="HelloDLL014PDB" Source="..\HelloEXE\bin\Debug\HelloDLL014.pdb" />
+      </Component>
+      <Component Id="HelloDLLComponent015" Guid="{52D03FB2-3BC4-4B03-A5C5-99724FF6782E}">
+        <File Id="HelloDLL015" Source="..\HelloEXE\bin\Debug\HelloDLL015.dll" />
+        <File Id="HelloDLL015PDB" Source="..\HelloEXE\bin\Debug\HelloDLL015.pdb" />
+      </Component>
+      <Component Id="HelloDLLComponent016" Guid="{D02B354E-702E-4493-802A-7EF7D67C2BE5}">
+        <File Id="HelloDLL016" Source="..\HelloEXE\bin\Debug\HelloDLL016.dll" />
+        <File Id="HelloDLL016PDB" Source="..\HelloEXE\bin\Debug\HelloDLL016.pdb" />
+      </Component>
+      <Component Id="HelloDLLComponent017" Guid="{AE546606-991B-4EC6-8A62-ABFF3D1CA01D}">
+        <File Id="HelloDLL017" Source="..\HelloEXE\bin\Debug\HelloDLL017.dll" />
+        <File Id="HelloDLL017PDB" Source="..\HelloEXE\bin\Debug\HelloDLL017.pdb" />
+      </Component>
+      <Component Id="HelloDLLComponent018" Guid="{3AD88927-F6DE-4913-80FC-B4A77333EF87}">
+        <File Id="HelloDLL018" Source="..\HelloEXE\bin\Debug\HelloDLL018.dll" />
+        <File Id="HelloDLL018PDB" Source="..\HelloEXE\bin\Debug\HelloDLL018.pdb" />
+      </Component>
+      <Component Id="HelloDLLComponent019" Guid="{E9274693-D48D-4405-A040-35D225ED9B1A}">
+        <File Id="HelloDLL019" Source="..\HelloEXE\bin\Debug\HelloDLL019.dll" />
+        <File Id="HelloDLL019PDB" Source="..\HelloEXE\bin\Debug\HelloDLL019.pdb" />
+      </Component>
+      <Component Id="HelloDLLComponent020" Guid="{07F4C630-8E4C-4FFA-9A85-E1834E55308A}">
+        <File Id="HelloDLL020" Source="..\HelloEXE\bin\Debug\HelloDLL020.dll" />
+        <File Id="HelloDLL020PDB" Source="..\HelloEXE\bin\Debug\HelloDLL020.pdb" />
+      </Component>
+      <Component Id="HelloEXEComponent" Guid="{EDD87757-9723-4684-8615-CE58B612EBF0}">
+        <File Id="HelloEXE" Source="..\HelloEXE\bin\Debug\HelloEXE.exe" />
+        <File Id="HelloEXEPDB" Source="..\HelloEXE\bin\Debug\HelloEXE.pdb" />
+      </Component>
+    </ComponentGroup>
+  </Fragment>
+</Wix>
