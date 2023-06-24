@@ -107,11 +107,19 @@ Idが大文字のパブリックプロパティは外部から指定可能なた
 msiexec /i setup.msi INSTALLDIR="o:\sw\HelloApp"
 ```
 
-## WiXメモ
+## TIPS
+
+### WiXメモ
 
 - Id="INSTALLDIR"のようにIdを大文字にした場合、publicプロパティとなり、msiexecで上書きすることができます。但しTARGETDIRなどWiX提供のプロパティは変更できないようです（？）。
 - Compressed="no"では、cabファイルが生成されず、インストール物はmsiのみに含まれるようにできます。
 
-## WiX3のインストール場所
+### WiX3のインストール場所
 
 C:\Program Files (x86)\WiX Toolset v3.11\bin
+
+### Orca（.msiを解析するツール）
+
+OrcaはWindows SDK（VSからインストールもできる）から入手できます。例えば以下です。
+
+C:\Program Files (x86)\Windows Kits\10\bin\10.0.22000.0\x86\Orca-x86_en-us.msi
