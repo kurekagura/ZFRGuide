@@ -73,3 +73,15 @@ C:\Program Files (x86)\Microsoft Visual Studio\2017\BuildTools\VC\Tools\MSVC\14.
 ```dos
 > nmake
 ```
+
+## 補足
+
+nmakeは言語非依存のビルドシステムです。コンパイラとして、MSのC/C++コンパイラ・リンカ（MSVC）を利用することで、C/C++のソースコードにも対応できます。MSVCコンパイラはcl.exe、リンカはlink.exeです。
+
+```dos
+> where cl.exe
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\bin\Hostx64\x64\cl.exe
+
+> where link.exe
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\bin\Hostx64\x64\link.exe
+```

@@ -116,3 +116,16 @@ VSのソリューション（拡張子.sln）に上記二つのcsprojを含ん�
 リストの１番目、HelloDLLプロジェクトはビルドの観点からは必要ないのですが、VSの機能ではソリューションに含めるようになっています。これによってソースコード「HelloDLL.cs」も編集できるようになっています。この方法を「プロジェクト参照」と呼びます。
 
 一方、HelloDLL.dllのソースコードが存在しない、または必要がない場合、「アセンブリ参照」として参照することもできます。
+
+## 補足
+
+NMAKEと同様にMSBuildも言語非依存のビルドシステムです。拡張子.<言語>projは、通常、プロジェクトファイルやMSBuildファイルとも呼ばれます。
+
+例えば、VSのC++プロジェクトを作成すると、拡張子.vcxprojが作成されます。この中味は.csprojと同じXMLSchemaを用いて記述されています。F#(.fsproj)、VB.NET(.vbproj)においても同様です。
+
+```XML
+<Project DefaultTargets="Build"
+ xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+```
+
+VSの１つのソリューション（.sln）に複数言語のプロジェクトファイル（.csprojと.vcxprojなど）を含めることで、統合的にビルドすることもできます。
