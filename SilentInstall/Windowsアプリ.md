@@ -25,3 +25,17 @@ msiファイルはOrcaで解析できます。OrcaはWindows SDK（VSからも�
 "UninstallString"="\"o:\\sw\\doxygen\\system\\unins000.exe\""
 "QuietUninstallString"="\"o:\\sw\\doxygen\\system\\unins000.exe\" /SILENT"
 ```
+
+## WinMerge
+
+```dos
+WinMerge-2.16.30-x64-Setup.exe /DIR="o:\sw\WinMerge" /VERYSILENT
+```
+
+```dos
+"o:\sw\WinMerge\unins000.exe" /VERYSILENT /NORESTART
+```
+
+既定インスコ先：`"C:\Program Files\WinMerge\WinMergeU.exe"`
+
+レジ：`HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\WinMerge_is1`
