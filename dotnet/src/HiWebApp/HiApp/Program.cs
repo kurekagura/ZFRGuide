@@ -1,3 +1,5 @@
+using HiDLL001;
+
 namespace HiApp
 {
     public class Program
@@ -7,7 +9,8 @@ namespace HiApp
             var builder = WebApplication.CreateBuilder(args);
             var app = builder.Build();
 
-            app.MapGet("/", () => "Hello World!");
+            var obj = new HiClass001();
+            app.MapGet("/", () => obj.GetHi());
 
             app.Run();
         }
