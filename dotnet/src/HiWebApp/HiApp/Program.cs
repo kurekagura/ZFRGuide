@@ -1,4 +1,5 @@
 using HiDLL001;
+using HiDLL002;
 using Microsoft.Extensions.Hosting.WindowsServices;
 
 namespace HiApp
@@ -21,6 +22,12 @@ namespace HiApp
 
             var obj = new HiClass001();
             app.MapGet("/", () => obj.GetHi());
+
+            app.MapGet("/api/hidll002", (HttpContext httpContext) =>
+            {
+                var obj = new HiClass002();
+                return obj;
+            });
 
             app.Run();
         }

@@ -5,7 +5,9 @@ VisualStudioVersion = 17.6.33815.320
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HiApp", "HiApp\HiApp.csproj", "{F0533D0C-1C39-44CC-A680-20E7BAEC1933}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HiDLL001", "HiDLL001\HiDLL001.csproj", "{C17017E2-7C0A-4A23-9426-63C47D62A9CA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HiDLL001", "HiDLL001\HiDLL001.csproj", "{C17017E2-7C0A-4A23-9426-63C47D62A9CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HiDLL002", "HiDLL002\HiDLL002.csproj", "{4084CC0E-1861-4925-874A-2AC9C0C2E1A3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{C17017E2-7C0A-4A23-9426-63C47D62A9CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C17017E2-7C0A-4A23-9426-63C47D62A9CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C17017E2-7C0A-4A23-9426-63C47D62A9CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4084CC0E-1861-4925-874A-2AC9C0C2E1A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4084CC0E-1861-4925-874A-2AC9C0C2E1A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4084CC0E-1861-4925-874A-2AC9C0C2E1A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4084CC0E-1861-4925-874A-2AC9C0C2E1A3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

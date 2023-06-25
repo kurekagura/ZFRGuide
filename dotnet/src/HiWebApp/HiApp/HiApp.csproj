@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\HiDLL001\HiDLL001.csproj" />
+    <ProjectReference Include="..\HiDLL002\HiDLL002.csproj" />
   </ItemGroup>
 
 </Project>
