@@ -1,0 +1,6 @@
+<Project>
+  <PropertyGroup>
+    <BaseOutputPath>..\..\bin\HiWebApp\HiApp</BaseOutputPath>
+    <BaseIntermediateOutputPath>..\..\obj\HiWebApp\HiApp</BaseIntermediateOutputPath>
+  </PropertyGroup>
+</Project>
