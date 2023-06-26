@@ -1,10 +1,12 @@
-﻿namespace HiDLL001
+﻿using HiDLL002;
+namespace HiDLL001
 {
     public class HiClass001
     {
         public string GetHi()
         {
-            return $"Hi in {typeof(HiClass001)}";
+            var obj = new HiClass002();
+            return obj.GetHi();
         }
     }
 }

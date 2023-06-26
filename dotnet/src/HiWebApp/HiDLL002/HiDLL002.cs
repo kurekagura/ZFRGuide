@@ -9,5 +9,10 @@
                 return typeof(HiClass002).Name;
             }
         }
+
+        public string GetHi()
+        {
+            return $"Hi in {typeof(HiClass002)}";
+        }
     }
 }
