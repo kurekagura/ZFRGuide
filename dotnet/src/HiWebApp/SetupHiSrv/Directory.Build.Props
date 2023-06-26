@@ -1,0 +1,6 @@
+<Project>
+  <PropertyGroup>
+    <BaseOutputPath>..\..\bin\HiWebApp\SetupHiSrv</BaseOutputPath>
+    <BaseIntermediateOutputPath>..\..\obj\HiWebApp\SetupHiSrv</BaseIntermediateOutputPath>
+  </PropertyGroup>
+</Project>
