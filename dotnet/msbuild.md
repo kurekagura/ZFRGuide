@@ -40,10 +40,10 @@ Directory.Build.Props
 msbuildでビルド出来なくなる。
 
 ```dos
-msbuild HiWebApp\HiApp\HiApp.csproj /p:Configuration=Debug;Platform=AnyCPU /t:rebuild
+msbuild HiWebApp\HiSrv\HiSrv.csproj /p:Configuration=Debug;Platform=AnyCPU /t:rebuild
 ⇒ NG
 ```
 
 ```dos
-dotnet build HiWebApp\HiApp\HiApp.csproj /p:Configuration=Debug /p:Platform=AnyCPU
+dotnet build HiWebApp\HiSrv\HiSrv.csproj /p:Configuration=Debug /p:Platform=AnyCPU
 ```
