@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33815.320
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HiApp", "HiApp\HiApp.csproj", "{F0533D0C-1C39-44CC-A680-20E7BAEC1933}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HiApp", "HiSrv\HiSrv.csproj", "{F0533D0C-1C39-44CC-A680-20E7BAEC1933}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HiDLL001", "HiDLL001\HiDLL001.csproj", "{C17017E2-7C0A-4A23-9426-63C47D62A9CA}"
 EndProject
