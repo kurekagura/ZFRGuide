@@ -5,7 +5,10 @@
 		<TargetFramework>net7.0-windows</TargetFramework>
 		<UseWPF>true</UseWPF>
 		<ApplicationManifest>app.manifest</ApplicationManifest>
+		<BaseOutputPath>..\..\bin\HiClient\HiClient.Skia.WPF</BaseOutputPath>
+		<!-- <BaseIntermediateOutputPath>..\..\aobj\HiClient\HiClient.Skia.WPF</BaseIntermediateOutputPath> -->
 	</PropertyGroup>
+	
 	<ItemGroup Label="AssemblyInfo">
 		<AssemblyAttribute Include="System.Runtime.InteropServices.ComVisibleAttribute">
 			<_Parameter1>false</_Parameter1>
