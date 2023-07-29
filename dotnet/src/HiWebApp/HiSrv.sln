@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HiDLL001", "HiDLL001\HiDLL0
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HiDLL002", "HiDLL002\HiDLL002.csproj", "{4084CC0E-1861-4925-874A-2AC9C0C2E1A3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SetupHiSrv", "SetupHiSrv\SetupHiSrv.csproj", "{BCE5D756-5228-4F8F-820F-B58365A1696F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SetupHiSrv", "SetupHiSrv\SetupHiSrv.csproj", "{BCE5D756-5228-4F8F-820F-B58365A1696F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HiSrvCover", "HiSrvCover\HiSrvCover.csproj", "{28F4B2BA-CB2E-4AF4-BF7E-8EF5B98C903F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{BCE5D756-5228-4F8F-820F-B58365A1696F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BCE5D756-5228-4F8F-820F-B58365A1696F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BCE5D756-5228-4F8F-820F-B58365A1696F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28F4B2BA-CB2E-4AF4-BF7E-8EF5B98C903F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28F4B2BA-CB2E-4AF4-BF7E-8EF5B98C903F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28F4B2BA-CB2E-4AF4-BF7E-8EF5B98C903F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28F4B2BA-CB2E-4AF4-BF7E-8EF5B98C903F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

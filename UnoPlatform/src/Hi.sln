@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33829.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HiClient", "HiClient\HiClient\HiClient.csproj", "{1E25D569-E2EB-4AA6-B5DF-6E8E4D9BE3CB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Source", "Source", "{C11C4D81-6C06-4431-B097-5A91DC40F913}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Platforms", "Platforms", "{DE43E9DC-66AC-420B-AB20-0120BAB02E31}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HiClient.Mobile", "HiClient\HiClient.Mobile\HiClient.Mobile.csproj", "{96F2425B-04DF-41E5-8AF2-D1231E70FE22}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HiClient.Skia.Gtk", "HiClient\HiClient.Skia.Gtk\HiClient.Skia.Gtk.csproj", "{FBD16E3C-A5BD-4A6B-88DA-A5591CE30D95}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HiClient.Skia.Wpf", "HiClient\HiClient.Skia.WPF\HiClient.Skia.Wpf.csproj", "{E35A164E-75E7-4F0B-AE93-0FD41EAAB97F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1E25D569-E2EB-4AA6-B5DF-6E8E4D9BE3CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E25D569-E2EB-4AA6-B5DF-6E8E4D9BE3CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E25D569-E2EB-4AA6-B5DF-6E8E4D9BE3CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E25D569-E2EB-4AA6-B5DF-6E8E4D9BE3CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96F2425B-04DF-41E5-8AF2-D1231E70FE22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96F2425B-04DF-41E5-8AF2-D1231E70FE22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96F2425B-04DF-41E5-8AF2-D1231E70FE22}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{96F2425B-04DF-41E5-8AF2-D1231E70FE22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96F2425B-04DF-41E5-8AF2-D1231E70FE22}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96F2425B-04DF-41E5-8AF2-D1231E70FE22}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{FBD16E3C-A5BD-4A6B-88DA-A5591CE30D95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBD16E3C-A5BD-4A6B-88DA-A5591CE30D95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBD16E3C-A5BD-4A6B-88DA-A5591CE30D95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBD16E3C-A5BD-4A6B-88DA-A5591CE30D95}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E35A164E-75E7-4F0B-AE93-0FD41EAAB97F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E35A164E-75E7-4F0B-AE93-0FD41EAAB97F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E35A164E-75E7-4F0B-AE93-0FD41EAAB97F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E35A164E-75E7-4F0B-AE93-0FD41EAAB97F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DE43E9DC-66AC-420B-AB20-0120BAB02E31} = {C11C4D81-6C06-4431-B097-5A91DC40F913}
+		{96F2425B-04DF-41E5-8AF2-D1231E70FE22} = {DE43E9DC-66AC-420B-AB20-0120BAB02E31}
+		{FBD16E3C-A5BD-4A6B-88DA-A5591CE30D95} = {DE43E9DC-66AC-420B-AB20-0120BAB02E31}
+		{E35A164E-75E7-4F0B-AE93-0FD41EAAB97F} = {DE43E9DC-66AC-420B-AB20-0120BAB02E31}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F998AD00-6DDA-44A2-B442-0F951FF0A32C}
+	EndGlobalSection
+EndGlobal
