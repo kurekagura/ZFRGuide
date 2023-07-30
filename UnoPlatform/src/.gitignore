@@ -1,0 +1,6 @@
+/.vs/
+/bin/
+/HiClient/HiClient.Mobile/obj/
+/HiClient/HiClient.Skia.Gtk/obj/
+/HiClient/HiClient.Skia.WPF/obj/
+/HiClient/HiClient/obj/
