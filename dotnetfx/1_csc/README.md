@@ -74,7 +74,14 @@ C:\Program Files (x86)\Microsoft Visual Studio\2017\BuildTools\VC\Tools\MSVC\14.
 > nmake
 ```
 
-## 補足
+## 補足①
+
+```console
+cd %systemroot%
+C:\Windows>dir /b /s | findstr csc.exe$
+```
+
+## 補足②
 
 nmakeは言語非依存のビルドシステムです。コンパイラとして、MSのC/C++コンパイラ・リンカ（MSVC）を利用することで、C/C++のソースコードにも対応できます。MSVCコンパイラはcl.exe、リンカはlink.exeです。
 
@@ -89,3 +96,7 @@ C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.3253
 .NET言語（C#, F#, VB.NET）にはリンカが必要ないため（リンクという概念がありません）、C#リンカというものは存在しません。
 
 csc.exeで.csファイルをコンパイルするとC/C++のようなオブジェクトファイル（中間生成物）は生成されず、直接.exeもしくは.dll（アセンブリという）を生成します。cscの`/reference`オプションで「参照」しているのは.dllであり、リンクしているわけではありません。
+
+## 参考
+
+[[C#]csc.exeでWPFアプリケーションをつくる](https://qiita.com/t13801206/items/ad1a9d61ede2274c7de2)
