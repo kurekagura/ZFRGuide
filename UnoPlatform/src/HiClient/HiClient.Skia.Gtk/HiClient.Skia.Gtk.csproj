@@ -4,6 +4,7 @@
 		<OutputType Condition="'$(Configuration)'=='Debug'">Exe</OutputType>
 		<TargetFramework>net7.0</TargetFramework>
 		<ApplicationManifest>app.manifest</ApplicationManifest>
+		<BaseOutputPath>..\..\bin\HiClient\HiClient.Skia.Gtk</BaseOutputPath>
 	</PropertyGroup>
 	<ItemGroup>
 		<EmbeddedResource Include="Package.appxmanifest" />
