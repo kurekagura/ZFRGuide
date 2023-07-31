@@ -1,5 +1,44 @@
 # メモ
 
+## Ubuntuでの動作確認手順
+
+Hyper-Vクイック作成（現在は非推奨の方法のよう）を使いUbuntu20.04をインストール。
+
+.NETランタイムをインストール
+
+Windows側の共有フォルダをLinux側からマウント。
+
+Windows側の出力フォルダを共有：HiClient.Skia.Gtk
+
+Linuxの/etc/fstabを編集
+
+```text
+//192.168.1.x/HiClient.Skia.Gtk  /home/myaccount/shared  cifs  username=hoge,password=fuga
+```
+
+```bash
+mkdir /home/myaccount/shared
+mount /home/myaccount/shared
+```
+
+```bash
+dotnet <path_to_dll>
+warn: Microsoft.UI.Xaml.Documents.Inline[0]
+The font Segoe UI could not be found, using system default
+# テキストが表示されない
+LANG=C
+で表示された。
+```
+
+## Ubuntuに.NETランタイムをインストール
+
+https://learn.microsoft.com/ja-jp/dotnet/core/install/linux-ubuntu
+
+```bash
+sudo apt install dotnet-runtime-7.0
+#sudo apt install dotnet-sdk-7.0
+```
+
 ## プロジェクトテンプレート
 
 ### MVVM
